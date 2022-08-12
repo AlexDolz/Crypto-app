@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+    </style>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <title>GND Cryp</title>
+    <script>
+      function ToggleMenu() {
+        const menu = document.querySelector("aside");
+        menu.classList.toggle("is-active");
+      }
+    </script>
+    <script>
+      function ToggleWallet() {
+        const menu = document.querySelector(".wallet");
+        menu.classList.toggle("is-active");
+      }
+    </script>
+  </head>
+
+  <!-- ! step 1 aside (nav) -->
+  <body>
+    <div class="container">
+      <aside>
+        <div class="aside__title">
+          <div class="logo__round"></div>
+          <div class="logo__round2"></div>
+          <div class="aside__text">GND CRYP</div>
+        </div>
+        <nav>
+          <div class="nav">
+            <a class="nav__item nav__item--active" href="">
+              <span class="nav__icon"><ion-icon name="grid"></ion-icon></span>
+              <span class="nav__text">Dashboard</span></a
+            >
+            <a class="nav__item" href="">
+              <span class="nav__icon"
+                ><ion-icon name="calculator"></ion-icon
+              ></span>
+              <span class="nav__text">Calculator</span></a
+            >
+            <a class="nav__item" href="">
+              <span class="nav__icon"><ion-icon name="wallet"></ion-icon></span>
+              <span class="nav__text">Wallets</span></a
+            >
+            <a class="nav__item" href="">
+              <span class="nav__icon"><ion-icon name="save"></ion-icon></span>
+              <span class="nav__text">Savings</span></a
+            >
+            <a class="nav__item" href="">
+              <span class="nav__icon"><ion-icon name="cash"></ion-icon></span>
+              <span class="nav__text">Currancies</span></a
+            >
+            <a class="nav__item" href="">
+              <span class="nav__icon"
+                ><ion-icon name="bag-add"></ion-icon
+              ></span>
+              <span class="nav__text">Expenses</span></a
+            >
+          </div>
+          <div class="nav">
+            <a class="nav__item" href="">
+              <span class="nav__icon"><ion-icon name="flame"></ion-icon></span>
+              <span class="nav__text">Upcoming</span></a
+            >
+            <a class="nav__item" href="">
+              <span class="nav__icon"
+                ><ion-icon name="fast-food"></ion-icon
+              ></span>
+              <span class="nav__text">Food</span></a
+            >
+            <a class="nav__item" href="">
+              <span class="nav__icon"><ion-icon name="watch"></ion-icon></span>
+              <span class="nav__text">Health</span></a
+            >
+            <a class="nav__item" href="">
+              <span class="nav__icon"><ion-icon name="person"></ion-icon></span>
+              <span class="nav__text">Account</span></a
+            >
+          </div>
+        </nav>
+        <div class="ads">
+          <img class="ads__image" src="img/boll.png" alt="advertising" />
+          <button class="ads__button">Get Pro Now</button>
+        </div>
+      </aside>
+
+      <!-- ! step 2 wallet section -->
+      <div class="wallet">
+        <div class="wallet__header header-wallet">
+          <span class="header-wallet__quit">Quit</span>
+          <span class="header-wallet__personal">Personal</span>
+          <img class="header-wallet__img" src="img/profile.jpg" alt="photo" />
+        </div>
+
+        <div class="wallet__payments payments-wallet">
+          <div class="payments-wallet__title">
+            <div class="payments-wallet__text">Payments</div>
+            <button class="payments-wallet__button">Clear</button>
+          </div>
+          <div class="payments-wallet__block">
+            <div class="block__top">
+              <div class="payments__icon-img">
+                <img
+                  class="payments__img"
+                  src="img/bitkoin 3.png"
+                  alt="bitcoin"
+                />
+              </div>
+              <div class="payments__text">Received LTC</div>
+              <div class="payments__arrow">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+              <div class="payments__sum">+ 15.08 USD</div>
+            </div>
+
+            <div class="block__bottom">
+              <div class="payments__date">09/28/2020 19:22</div>
+              <div class="payments__imgs">
+                <img
+                  class="payments__avatar"
+                  src="img/avatar.png"
+                  alt="photo"
+                />
+                <img
+                  class="payments__avatar"
+                  src="img/avatar2.png"
+                  alt="photo"
+                />
+                <div class="payments__avatar payments__avatar--full">+6</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="payments-wallet__block">
+            <div class="block__top">
+              <div class="payments__icon-img payments__icon-img--green">
+                <ion-icon name="logo-web-component"></ion-icon>
+              </div>
+              <div class="payments__text">Received LINK</div>
+              <div class="payments__arrow">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+              <div class="payments__sum">+ 957.96 USD</div>
+            </div>
+
+            <div class="block__bottom">
+              <div class="payments__date">09/28/2020 19:22</div>
+              <div class="payments__imgs">
+                <img
+                  class="payments__avatar"
+                  src="img/avatar.png"
+                  alt="photo"
+                />
+                <img
+                  class="payments__avatar"
+                  src="img/avatar2.png"
+                  alt="photo"
+                />
+                <div
+                  class="payments__avatar payments__avatar--full payments__avatar--full--green"
+                >
+                  +6
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="payments__new">
+          <div class="payments__new-icon">
+            <ion-icon name="pencil"></ion-icon>
+          </div>
+          <div class="payments__new-block">
+            <span class="payments__new-icon2">
+              <ion-icon name="add"></ion-icon>
+            </span>
+            <span class="payments__new-text">New Transfer</span>
+          </div>
+        </div>
+        <div class="wallet__list-header">Wallets</div>
+        <div class="wallet__footer">
+          <ul class="wallet__list">
+            <li class="wallet__item">
+              <div class="wallet__item-left">
+                <span class="wallet__icon"
+                  ><ion-icon name="logo-bitcoin"></ion-icon
+                ></span>
+                <div class="wallet__name">
+                  <span class="wallet__text">BTE</span>
+                  <span class="wallet__subtext">Bitcoin</span>
+                </div>
+              </div>
+              <div class="wallet__item-right">
+                <div class="wallet__sum">37%</div>
+                <div class="wallet__sum2">-2.5%</div>
+              </div>
+            </li>
+
+            <li class="wallet__item">
+              <div class="wallet__item-left">
+                <span class="wallet__icon wallet__icon--yellow"
+                  ><ion-icon name="logo-usd"></ion-icon
+                ></span>
+                <div class="wallet__name">
+                  <span class="wallet__text">DAI</span>
+                  <span class="wallet__subtext">Dai</span>
+                </div>
+              </div>
+              <div class="wallet__item-right">
+                <div class="wallet__sum">23%</div>
+                <div class="wallet__sum2">+7.2%</div>
+              </div>
+            </li>
+
+            <li class="wallet__item">
+              <div class="wallet__item-left">
+                <span class="wallet__icon wallet__icon--blue"
+                  ><ion-icon name="logo-yen"></ion-icon
+                ></span>
+                <div class="wallet__name">
+                  <span class="wallet__text">XRP</span>
+                  <span class="wallet__subtext">Riggle</span>
+                </div>
+              </div>
+              <div class="wallet__item-right">
+                <div class="wallet__sum">20%</div>
+                <div class="wallet__sum2">-3.1%</div>
+              </div>
+            </li>
+
+            <li class="wallet__item">
+              <div class="wallet__item-left">
+                <span class="wallet__icon wallet__icon--green"
+                  ><ion-icon name="logo-xing"></ion-icon
+                ></span>
+                <div class="wallet__name">
+                  <span class="wallet__text">USDT</span>
+                  <span class="wallet__subtext">Tether</span>
+                </div>
+              </div>
+              <div class="wallet__item-right">
+                <div class="wallet__sum">17%</div>
+                <div class="wallet__sum2">+1.8%</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ! step 3 Main section -->
+      <main>
+        <div class="main__search">
+          <ion-icon class="main__search-icon" name="search-outline"></ion-icon>
+          <input
+            class="main__search-input"
+            type="text"
+            placeholder="Search..."
+          />
+        </div>
+        <div class="main__title">
+          <span class="main__title-bold">Hi</span>
+          <span class="main__title-normal">, Mikey</span>
+        </div>
+
+        <!-- ! Cards section -->
+        <div class="cards">
+          <div class="cards__item cards__item--orange">
+            <div class="cards__header">
+              <span class="cards__header-name">Bitcoin</span>
+              <span class="cards__header-menu"
+                ><ion-icon name="ellipsis-vertical"></ion-icon
+              ></span>
+            </div>
+            <div class="cards__footer">
+              <img
+                class="cards__footer-img"
+                src="img/bitkoin.png"
+                alt="bitcoin"
+              />
+              <div class="cards__footer-balance">0.2231345 BTC</div>
+              <div class="cards__footer-value">11, 032.24 USD</div>
+            </div>
+          </div>
+
+          <div class="cards__item cards__item--pink">
+            <div class="cards__header">
+              <span class="cards__header-name">Etherium</span>
+              <span class="cards__header-menu"
+                ><ion-icon name="ellipsis-vertical"></ion-icon
+              ></span>
+            </div>
+            <div class="cards__footer">
+              <img
+                class="cards__footer-img"
+                src="img/bitkoin 2.png"
+                alt="bitcoin2"
+              />
+              <div class="cards__footer-balance">10.612356 ETH</div>
+              <div class="cards__footer-value">1242.31 USD</div>
+            </div>
+          </div>
+
+          <div class="cards__item cards__item--blue">
+            <div class="cards__header">
+              <span class="cards__header-name">Litecoin</span>
+              <span class="cards__header-menu"
+                ><ion-icon name="ellipsis-vertical"></ion-icon
+              ></span>
+            </div>
+            <div class="cards__footer">
+              <img
+                class="cards__footer-img"
+                src="img/bitkoin 3.png"
+                alt="bitcoin2"
+              />
+              <div class="cards__footer-balance">120.235 LTC</div>
+              <div class="cards__footer-value">37,747.78 USD</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ! Activity section -->
+        <div class="activity">
+          <div class="activity__header">
+            <div class="activity__header-top">
+              <span class="activity__header-title">Latest Activity</span>
+              <div class="activity__header-buttons">
+                <button class="activity__header-button">
+                  <ion-icon name="settings-outline"></ion-icon>
+                </button>
+                <button
+                  class="activity__header-button activity__header-button--active"
+                >
+                  <ion-icon name="add-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+            <div class="activity__header-bottom">
+              <span class="activity__header-subtitle"
+                >Updated 12 minutes ago</span
+              >
+              <span class="activity__header-edit">edit</span>
+            </div>
+          </div>
+
+          <div class="activity__list">
+            <div class="activity__item">
+              <div class="activity__item1">
+                <span class="activity__icon">
+                  <ion-icon name="shield-half-outline"></ion-icon>
+                </span>
+                <div class="activity__item-name">
+                  <div class="activity__item-text">Insurance</div>
+                  <div class="activity__item-subtext">Property Coverage</div>
+                </div>
+              </div>
+              <div class="activity__item-wallet">
+                <div class="activity__item-text">LTC Wallet</div>
+                <div class="activity__item-subtext">Personal account</div>
+              </div>
+              <div class="activity__item-date">
+                <div class="activity__item-text">7 Jun, 21</div>
+                <div class="activity__item-subtext">Last payment</div>
+              </div>
+              <div class="activity__item-value">
+                <div class="activity__item-text">-10.24 LTC</div>
+                <div class="activity__item-subtext">Balance</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="activity__list">
+            <div class="activity__item">
+              <div class="activity__item1">
+                <span class="activity__icon activity__icon--orange">
+                  <ion-icon name="flash-outline"></ion-icon>
+                </span>
+                <div class="activity__item-name">
+                  <div class="activity__item-text">Electricity</div>
+                  <div class="activity__item-subtext">Utility payments</div>
+                </div>
+              </div>
+              <div class="activity__item-wallet">
+                <div class="activity__item-text">ETH Wallet</div>
+                <div class="activity__item-subtext">Personal account</div>
+              </div>
+              <div class="activity__item-date">
+                <div class="activity__item-text">9 Jun, 21</div>
+                <div class="activity__item-subtext">Last payment</div>
+              </div>
+              <div class="activity__item-value">
+                <div class="activity__item-text">-3.543 ETH</div>
+                <div class="activity__item-subtext">Balance</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="mobile__menu">
+      <div>Main</div>
+      <div>Reports</div>
+      <div onclick="ToggleMenu()">Menu</div>
+      <div onclick="ToggleWallet()">Wallet</div>
+      <div>Profile</div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+@media (max-width: 768px) {
+  .wallet {
+    transform: translateX(40rem);
+    transition: all 0.2s ease-out;
+  }
+  .wallet.is-active {
+    transform: translateX(0);
+
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+  }
+  aside {
+    transform: translateX(-20rem);
+    transition: all 0.2s ease-out;
+  }
+  aside.is-active {
+    transform: translateX(0);
+    width: 100%;
+    height: 100%;
+  }
+
+  .nav__icon {
+    font-size: 6.7rem;
+    width: 8.8rem;
+    height: 8.8rem;
+  }
+
+  main {
+    width: 100%;
+    margin: 0;
+    padding: 2rem 3rem;
+  }
+  .ads {
+    display: none;
+  }
+  .mobile__menu {
+    background-color: #51449c;
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 20px 20px 0 0;
+    z-index: 99;
+    color: rgb(198, 198, 198);
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .wallet__item:not(:last-child) {
+    margin-bottom: 2.6rem;
+  }
+  .wallet__icon {
+    font-size: 6rem;
+  }
+  .wallet__text {
+    font-size: 3.5rem;
+  }
+  .wallet__subtext {
+    font-size: 2rem;
+  }
+  .wallet__sum {
+    font-size: 3rem;
+  }
+  .wallet__sum2 {
+    font-size: 2.5rem;
+  }
+  .payments__new-icon {
+    margin-right: 13rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait) {
+  .wallet {
+    display: none;
+  }
+  main {
+    width: 85%;
+    margin-left: 10rem;
+  }
+}
+@media (max-width: 1078px) {
+  main {
+    width: 85%;
+  }
+}
