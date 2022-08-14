@@ -119,8 +119,10 @@ main {
 .nav__item:hover .nav__text {
   color: black;
 }
+
 .nav__icon,
-.nav__text {
+.nav__text,
+.scroll__button {
   transition: all 0.2s ease-out;
 }
 .nav__item:hover .aside__text {
@@ -409,7 +411,7 @@ nav .nav:first-child {
   background: #f7f8fa;
   border-radius: 2rem;
   padding: 1.3rem 1.5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 .main__search-input {
   border: none;
@@ -448,6 +450,9 @@ nav .nav:first-child {
   position: absolute;
   font-weight: 600;
 }
+.main__title {
+  margin-bottom: 3rem;
+}
 
 /* ! Cards section */
 .cards {
@@ -455,13 +460,26 @@ nav .nav:first-child {
   justify-content: space-between;
   margin-bottom: 6rem;
 }
-
-.main__title {
-  margin-bottom: 5rem;
+.cards__container {
+  overflow-x: scroll;
+  margin-bottom: 2rem;
 }
+.cards__container::-webkit-scrollbar-thumb {
+  background: #47399a;
+  border-radius: 0.8rem;
+}
+.cards__container::-webkit-scrollbar {
+  height: 1rem;
+}
+.cards__container::-webkit-scrollbar-track {
+  background: #e7e7e7;
+  border-radius: 0.8rem;
+}
+
 .cards__item {
-  width: calc(100% / 3 - 2rem);
-  height: 25rem;
+  min-width: 17em;
+  height: 22rem;
+  margin-right: 3.5rem;
   padding: 1.5rem 1.2rem;
   border-radius: 1rem;
   display: flex;
@@ -512,6 +530,27 @@ nav .nav:first-child {
 }
 .cards__item--blue {
   background-color: #b6dfea;
+}
+
+.scroll__button {
+  width: 50px;
+  height: 50px;
+  font-size: large;
+  font-weight: 800;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0.4rem 0.4rem rgb(228 228 228);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem auto;
+  cursor: pointer;
+}
+.scroll__button:hover {
+  background-color: #52459f;
+}
+.scroll__button:hover ion-icon {
+  color: white;
 }
 
 /* ! Activity section */
@@ -591,7 +630,7 @@ nav .nav:first-child {
   color: #7a8086;
 }
 .activity__list:not(:last-child) {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .activity__icon--orange {
   background: #ffefe8;
