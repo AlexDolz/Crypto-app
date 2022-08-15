@@ -572,6 +572,7 @@ nav .nav:first-child {
   color: #707070;
   font-size: 1.5rem;
   cursor: pointer;
+  line-height: 1;
 }
 .activity__header-button--active {
   background-color: #52459f;
