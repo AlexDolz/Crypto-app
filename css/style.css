@@ -348,6 +348,7 @@ nav .nav:first-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 0.6rem;
 }
 .wallet__icon {
   font-size: 2rem;
@@ -368,9 +369,6 @@ nav .nav:first-child {
 .wallet__icon--green {
   background: #e1f8f2;
   color: #52d8b5;
-}
-.wallet__item:not(:last-child) {
-  margin-bottom: 0.6rem;
 }
 
 .wallet__name {
