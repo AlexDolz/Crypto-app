@@ -2,7 +2,7 @@
   .wallet {
     transform: translateX(40rem);
     transition: all 0.2s ease-out;
-    padding: 2.5rem 1.3rem 2.5rem 3.9rem;
+    padding: 2.5rem 1.5rem 2.5rem 3.7rem;
     overflow: scroll;
   }
 
@@ -85,12 +85,12 @@
   }
 
   .nav__icon {
-    font-size: 4rem;
-    width: 6.5rem;
-    height: 6.5rem;
+    font-size: 3rem;
+    width: 5.5rem;
+    height: 5.5rem;
   }
   .nav__text {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
   .nav {
     margin-top: 4rem;
