@@ -572,7 +572,7 @@ nav .nav:first-child {
   color: #707070;
   font-size: 1.5rem;
   cursor: pointer;
-  line-height: 1;
+  line-height: 0;
 }
 .activity__header-button--active {
   background-color: #52459f;
@@ -600,12 +600,13 @@ nav .nav:first-child {
   cursor: pointer;
 }
 .activity__icon {
-  padding: 1rem 1rem 0.8rem 1rem;
+  padding: 1rem;
   background: #e8eef8;
   border-radius: 1rem;
   font-size: 1.5rem;
   margin-right: 1rem;
   color: #1a56ae;
+  line-height: 0;
 }
 
 .activity__item-text {
