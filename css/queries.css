@@ -2,6 +2,8 @@
   .wallet {
     transform: translateX(40rem);
     transition: all 0.2s ease-out;
+    padding: 2.5rem 1.3rem 2.5rem 3.9rem;
+    overflow: scroll;
   }
 
   .main__search {
@@ -63,7 +65,7 @@
     align-self: flex-start;
   }
   body {
-    margin-bottom: 6rem;
+    margin-bottom: 8rem;
   }
   .wallet.is-active {
     transform: translateX(0);
@@ -83,15 +85,15 @@
   }
 
   .nav__icon {
-    font-size: 6.7rem;
-    width: 8.8rem;
-    height: 8.8rem;
+    font-size: 4rem;
+    width: 6.5rem;
+    height: 6.5rem;
   }
   .nav__text {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .nav {
-    margin-top: 8rem;
+    margin-top: 4rem;
   }
 
   main {
@@ -104,8 +106,8 @@
   }
   .mobile__menu {
     background-color: #51449c;
-    width: 37.5rem;
-    height: 7rem;
+    width: 37rem;
+    height: 5rem;
     display: flex;
     position: fixed;
     bottom: 0;
@@ -120,40 +122,29 @@
     font-size: 1.6rem;
     font-weight: bold;
   }
-  .wallet__item:not(:last-child) {
-    margin-bottom: 2.6rem;
+  .wallet__item {
+    margin-bottom: 6.6rem;
   }
   .wallet__icon {
-    font-size: 5rem;
+    font-size: 3rem;
   }
   .wallet__text {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .wallet__subtext {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .wallet__sum {
-    font-size: 3rem;
-  }
-  .wallet__sum2 {
     font-size: 2rem;
   }
+  .wallet__sum2 {
+    font-size: 1.5rem;
+  }
   .payments__new-icon {
-    margin-right: 13rem;
+    margin-right: 7.5rem;
   }
-}
 
-/* @media screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait) {
-  .wallet {
-    display: none;
-  }
-  main {
-    width: 85%;
-    margin-left: 10rem;
+  .wallet__footer {
+    margin-bottom: 8rem;
   }
 }
-@media (max-width: 1078px) {
-  main {
-    width: 85%;
-  }
-} */
