@@ -148,3 +148,151 @@
     margin-bottom: 8rem;
   }
 }
+
+@media screen and (any-pointer: coarse) and (orientation: landscape) {
+  .wallet {
+    transform: translateX(40rem);
+    transition: all 0.2s ease-out;
+    padding: 2.5rem 2.4rem 2.5rem 2.7rem;
+    overflow: scroll;
+  }
+
+  .cards {
+    display: flex;
+  }
+  .main__title {
+    text-align: center;
+  }
+  .cards__container {
+    overflow-x: scroll;
+  }
+  .cards__item {
+    width: 31rem;
+    height: 30rem;
+    margin-bottom: 2rem;
+  }
+  .cards__footer-img {
+    height: 15rem;
+  }
+  .scroll__button {
+    display: none;
+  }
+  .activity__header-top {
+    justify-content: space-between;
+    margin-bottom: 1.3rem;
+  }
+  .activity__header-button {
+    font-size: 2.3rem;
+  }
+
+  .activity__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .activity__item-date {
+    justify-self: center;
+    margin-left: 4.4rem;
+  }
+  .activity__list {
+    width: fit-content;
+  }
+  .activity__icon {
+    font-size: 2.5rem;
+  }
+  .activity__item-text {
+    font-size: 1.6rem;
+  }
+  .activity__item-subtext {
+    font-size: 1.2rem;
+  }
+
+  .activity__item-wallet {
+    grid-column: 2 / 4;
+    align-self: flex-start;
+  }
+  body {
+    margin-bottom: 8rem;
+  }
+  .wallet.is-active {
+    transform: translateX(0);
+
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+  }
+  aside {
+    transform: translateX(-20rem);
+    transition: all 0.2s ease-out;
+  }
+  aside.is-active {
+    transform: translateX(0);
+    width: 100%;
+    height: 100%;
+  }
+
+  .nav__icon {
+    font-size: 3rem;
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+  .nav__text {
+    font-size: 1.4rem;
+  }
+  .nav {
+    margin-top: 4rem;
+  }
+
+  main {
+    width: 100%;
+    margin-left: 0.5rem;
+    padding: 2rem 3rem;
+  }
+  .ads {
+    display: none;
+  }
+  .mobile__menu {
+    background-color: #51449c;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 20px 20px 0 0;
+    z-index: 99;
+    color: rgb(198, 198, 198);
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  .wallet__item {
+    margin-bottom: 2rem;
+  }
+  .wallet__icon {
+    font-size: 3rem;
+  }
+  .wallet__text {
+    font-size: 2rem;
+  }
+  .wallet__subtext {
+    font-size: 1.5rem;
+  }
+  .wallet__sum {
+    font-size: 2rem;
+  }
+  .wallet__sum2 {
+    font-size: 1.5rem;
+  }
+  .payments__new-icon {
+    margin-right: 7.5rem;
+  }
+
+  .wallet__footer {
+    margin-bottom: 8rem;
+  }
+}
